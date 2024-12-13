@@ -17,5 +17,10 @@
     ],
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
-    }
+    },
+    // fix Pylance can't find module in editable install
+    // relate issue:
+    // https://github.com/microsoft/pylance-release/issues/3473#issuecomment-1619179711
+    // https://github.com/microsoft/pylance-release/blob/main/TROUBLESHOOTING.md#editable-install-modules-not-found
+    // "python.analysis.extraPaths": ["./path/to/editable/install/package"],
 }
